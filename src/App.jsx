@@ -1,9 +1,12 @@
-import './App.css';
+import { AppRouter } from './router/AppRouter';
+import { AppTheme } from './theme';
 
 function App() {
 
     return (
-        <h1>Youtube Clone</h1>
+        <AppTheme>
+            <AppRouter />
+        </AppTheme>
     );
     
 }
