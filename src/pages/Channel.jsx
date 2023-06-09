@@ -1,10 +1,10 @@
-import { ChannelLayout } from '../layouts';
+import { SecondLayout } from '../layouts';
 
 const Channel = () => {
     return (
-        <ChannelLayout>
-            <p>Channel</p>
-        </ChannelLayout>
+        <SecondLayout>
+            <h1>Channel</h1>
+        </SecondLayout>
     );
 }
 

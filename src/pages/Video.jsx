@@ -1,10 +1,10 @@
-import { VideoLayout } from '../layouts';
+import { SecondLayout } from '../layouts';
 
 const Video = () => {
     return (
-        <VideoLayout>
+        <SecondLayout>
             <p>Video</p>
-        </VideoLayout>
+        </SecondLayout>
     );
 }
 

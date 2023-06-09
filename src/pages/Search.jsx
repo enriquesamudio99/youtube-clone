@@ -1,10 +1,10 @@
-import { MainLayout } from '../layouts';
+import { SecondLayout } from '../layouts';
 
 const Search = () => {
     return (
-        <MainLayout>
+        <SecondLayout>
             <p>Search</p>
-        </MainLayout>
+        </SecondLayout>
     )
 }
 
