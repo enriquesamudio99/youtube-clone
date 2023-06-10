@@ -1,10 +1,11 @@
 import { Drawer, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 
+import { useStateContext } from '../contexts/ContextProvider';
 import { categories } from '../utils/constants';
 
-const selectedCategory = "New";
-
 const Sidebar = ({ handleToggleBar, variant, open }) => {
+
+    const { selectedCategory, handleSelectedCategory } = useStateContext();
 
     return (
         <Drawer
@@ -63,7 +64,9 @@ const Sidebar = ({ handleToggleBar, variant, open }) => {
                                 }
                             }}
                         >
-                            <ListItemButton>
+                            <ListItemButton
+                                onClick={() => handleSelectedCategory(categorie.name)}
+                            >
                                 <ListItemIcon
                                     sx={{
                                         color: "#F1F1F1"

@@ -4,11 +4,7 @@ import { Navbar } from '../components';
 
 const SecondLayout = ({ children }) => {
     return (
-        <Box
-            sx={{
-                minHeight: "100vh"
-            }}
-        >
+        <Box>
             <Navbar 
                 handleToggleBar={() => {}}
                 isMainLayout={false}
@@ -18,7 +14,6 @@ const SecondLayout = ({ children }) => {
                     xs: "68px",
                     md: "76px"
                 }}
-                p={2}
             >
                 {children}
             </Box>

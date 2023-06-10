@@ -18,11 +18,7 @@ const MainLayout = ({ children }) => {
     };
 
     return (
-        <Box
-            sx={{
-                minHeight: "100vh"
-            }}
-        >
+        <Box>
             <Navbar 
                 handleToggleBar={handleToggleBar}
                 isMainLayout
@@ -50,7 +46,7 @@ const MainLayout = ({ children }) => {
                     xs: 0,
                     md: "240px"
                 }}
-                p={2}
+                pt={1}
             >
                 {children}
             </Box>
